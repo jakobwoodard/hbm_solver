@@ -19,6 +19,6 @@ for i in range(count):
     new_word = pytesseract.image_to_string(ss)
     if new_word not in words:
         words.append(new_word)
-        pyautogui.moveTo(1020, 475, duration=1)
+        pyautogui.click(1020, 475)
     else:
         pyautogui.click(880, 475)
